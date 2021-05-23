@@ -2,8 +2,8 @@
   <div *ngIf="profile">
     <div class="panel panel-default">
       <div class="panel heading">
-        {{profile.name}} <br><small>{{profile.login}}</small>
-        <br> <span> {{profile.twitter_username}}</span>
+      Name:  {{profile.name}} <br><small>Student at: {{profile.company}}</small>
+        <br> <span> {{profile.email}}</span>
       </div>
       <div class="panel-body">
         <div class="row">
@@ -13,9 +13,9 @@
                 </div>
             <ul class="list-group">
               <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-              <li class="list-group-item" *ngIf="profile.twitter_username">{{profile.twitter_username}}</li>
-              <li class="list-group-item" *ngIf="profile.location">{{profile.location}}</li>
-              <li class="list-group-item" *ngIf="profile.updated_at">{{profile.updated_at}}</li>
+              <li class="list-group-item" *ngIf="profile.twitter_username">Twitter Name: {{profile.twitter_username}}</li>
+              <li class="list-group-item" *ngIf="profile.location">Location: {{profile.location}}</li>
+              <li class="list-group-item" *ngIf="profile.updated_at">Updated on: {{profile.updated_at}}</li>
             </ul>
           </div>
           <div class="col-sm-4">
