@@ -7,9 +7,13 @@ import { ProfileService } from '../profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-profile:any;
+  profile:any;
   repos: any;
   repo: any;
+  searchRepo: any;
+  resultCount:any;
+  users: any;
+  githubUserRequest: any;
 
   constructor(private profileService:ProfileService) { 
     this.profileService.getProfileData().subscribe(profile =>{
@@ -23,6 +27,12 @@ profile:any;
   }
 
   ngOnInit(){
+ 
+  }
+    searchRepos() {
+      this.searchRepo = '';
+      this.resultCount = 10;
+
   }
 
 }
