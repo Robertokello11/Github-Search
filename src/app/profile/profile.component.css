@@ -3,3 +3,11 @@
     image-orientation: from-image;
     width: 50%;
 }
+.public{
+    color: rgb(161, 127, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-style: italic;
+}
+.container{
+    background-color:burlywood;
+}
