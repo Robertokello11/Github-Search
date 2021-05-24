@@ -10,10 +10,10 @@ export class ProfileComponent implements OnInit {
   profile:any;
   repos: any;
   repo: any;
-  searchRepo: any;
-  resultCount:any;
-  users: any;
-  githubUserRequest: any;
+  // searchRepo: any;
+  // resultCount:any;
+  // users: any;
+  // githubUserRequest: any;
 
   constructor(private profileService:ProfileService) { 
     this.profileService.getProfileData().subscribe(profile =>{
@@ -29,10 +29,5 @@ export class ProfileComponent implements OnInit {
   ngOnInit(){
  
   }
-    searchRepos() {
-      this.searchRepo = '';
-      this.resultCount = 10;
-
-  }
-
+    
 }
