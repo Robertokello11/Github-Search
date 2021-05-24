@@ -15,7 +15,7 @@ profile:any;
       console.log(profile);
       this.profile = profile;
     });
-    this.profileService.getProfileData().subscribe((repos: any) =>{
+    this.profileService.getProfileRepo().subscribe((repos: any) =>{
       console.log(repos);
       this.repos =repos;
     });
