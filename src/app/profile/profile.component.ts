@@ -9,15 +9,16 @@ import { ProfileService } from '../profile.service';
 export class ProfileComponent implements OnInit {
 profile:any;
   repos: any;
+  repo: any;
 
   constructor(private profileService:ProfileService) { 
     this.profileService.getProfileData().subscribe(profile =>{
       console.log(profile);
       this.profile = profile;
     });
-    this.profileService.getProfileRepo().subscribe((repos: any) =>{
+    this.profileService.getProfileData().subscribe((repos: any) =>{
       console.log(repos);
-      this.repos =repos;
+      this.repo =repos;
     });
   }
 
