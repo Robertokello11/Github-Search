@@ -1,6 +1,13 @@
+# Author 
+Robert Okello
+
 # Github
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+
+# Project Description 
+This project is is a Github search that enables the user to search for resipotories
+
 
 ## Development server
 
