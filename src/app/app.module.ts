@@ -13,8 +13,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   declarations: [
     AppComponent,
     ProfileComponent,
-    NavbarComponent
-  ],
+    NavbarComponent,
+     ],
   imports: [
     BrowserModule,
     AppRoutingModule,

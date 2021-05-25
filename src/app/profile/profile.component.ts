@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
 
@@ -31,3 +32,4 @@ export class ProfileComponent implements OnInit {
   }
     
 }
+ 
